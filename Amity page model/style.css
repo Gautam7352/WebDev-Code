@@ -1,0 +1,214 @@
+/*************************************Body*************************************/
+body {
+    font-family: "Lato", sans-serif
+}
+
+/*************************************Navbar*************************************/
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: max-content;
+}
+
+#navbar ul {
+    display: inline-flex;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(12, 102, 236);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 1px 7px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/*************************************social media*************************************/
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #8a3ab9;
+    color: white;
+}
+
+
+/*************************************Slideshow*************************************/
+.carousel .card {
+    background: #222;
+    border-radius: 3px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.carousel .card:hover {
+    background: rgb(24, 82, 243);
+}
+
+.carousel .card .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.carousel .card:hover .box {
+    transform: scale(1.05);
+}
+
+.carousel .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.carousel .card img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid blue;
+    transition: all 0.3s ease;
+}
+
+.carousel a {
+    background: chocolate;
+    padding: 5px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+/* table section styling */
+
+.table {
+    background-image: url(research.jpg);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    margin: auto;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    align-items: center;
+    /* justify-content: center; */
+    margin: 20px 20px;
+    /* padding: 200px; */
+}
+
+.plan h4 {
+    color: grey;
+    padding: 15px;
+}
+
+.plan p {
+    padding: 2px;
+}
+
+.plan button {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(251, 251, 97);
+    color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.plan button:hover {
+    background-color: chocolate;
+    color: white;
+}
+
+#standard {
+    border-right: 2px solid lightgrey;
+    padding-right: 15px;
+}
+
+#premium {
+    border-left: 2px solid lightgrey;
+    padding-left: 15px;
+}
+
+/* footer section styling */
+footer {
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: blue;
+    text-decoration: none;
+}
+
+footer span a:hover {
+    text-decoration: underline;
+}
